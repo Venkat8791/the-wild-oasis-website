@@ -1,7 +1,6 @@
 import DateSelector from "@/app/_components/DateSelector";
 import ReservationForm from "@/app/_components/ReservationForm";
 import { getBookedDatesByCabinId, getSettings } from "../_lib/data-service";
-import { se } from "date-fns/locale";
 async function Reservation({ cabin }) {
   const [settings, bookedDates] = await Promise.all([
     getSettings(),
